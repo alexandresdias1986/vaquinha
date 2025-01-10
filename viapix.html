@@ -1,0 +1,28 @@
+<div id="doacao-pix" style="display:none; background-color: rgba(0, 0, 0, 0.8); padding: 50px 20px; color: white; text-align: center;">
+    <h2>Doação via PIX</h2>
+    <p>Escolha uma das opções abaixo para fazer sua doação via PIX:</p>
+    
+    <div class="pix-info">
+        <h3>Chave PIX</h3>
+        <p>Use a chave PIX abaixo para realizar sua doação:</p>
+        <p><strong>12345678900@chavepix.com.br</strong></p>
+        <p>Ou, se preferir, escaneie o QR Code abaixo:</p>
+    </div>
+
+    <!-- Exemplo de QR Code (substitua pela imagem real do QR Code PIX) -->
+    <img class="qr-code" src="https://via.placeholder.com/300x300.png?text=QR+Code+PIX" alt="QR Code PIX">
+
+    <br><br>
+    <button onclick="window.location.href='javascript:history.back()'" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Voltar</button>
+</div>
+
+<script>
+    // Script para mostrar a seção de doação via PIX ao clicar no botão "Doar via PIX"
+    document.querySelector('.donate-button').addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+        document.getElementById('doacao-pix').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>

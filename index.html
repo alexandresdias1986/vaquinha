@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAquinha do Ale & Pri</title>
+    <style>
+        body {
+
+            background-image: url('./img/457524813_7765613903540614_4678432563168075676_n.jpg'); /* Substitua pelo link da imagem desejada */
+            background-size: contain; /* A imagem será redimensionada para caber na tela */
+            background-repeat: no-repeat;
+            background-position: center;
+            /*background-attachment: fixed; /* A imagem ficará fixa durante o rolar da página */
+            color: rgb(38, 216, 68);
+            font-family: Arial, sans-serif;
+            margin: 20 ;
+            padding: 20;
+            height: 120vh;
+         
+        header {
+            background-color: #0e0f0e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+        }
+        .description {
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente para legibilidade */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            border: 3px solid black; /* Contorno preto */
+        }
+        .progress-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .progress-bar {
+            width: 2%; /* Aqui você pode ajustar com base nas doações recebidas */
+            height: 30px;
+            background-color: #4CAF50;
+            border-radius: 10px;
+        }
+        .donate-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .donate-buttons button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .donate-buttons button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+         /* Responsividade para telas pequenas (celulares) */
+         @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem; /* Ajusta o tamanho da fonte do título em telas menores */
+            }
+
+            .description {
+                font-size: 1rem; /* Ajusta o tamanho do texto da descrição */
+                padding: 15px; /* Ajusta o padding da descrição */
+            }
+
+            .donate-button {
+                padding: 12px 20px; /* Ajusta o tamanho do botão em telas menores */
+                font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+            }
+        }
+
+        /* Responsividade para telas muito pequenas (smartphones em modo retrato) */
+        @media (max-width: 400px) {
+            header h1 {
+                font-size: 1.6rem; /* Ajusta o título ainda mais para telas muito pequenas */
+            }
+
+            .description {
+                font-size: 0.9rem; /* Ajusta ainda mais o tamanho do texto da descrição */
+                padding: 10px; /* Ajusta o padding da descrição */
+            }
+
+            .donate-button {
+                padding: 10px 15px; /* Ajusta o tamanho do botão para telas muito pequenas */
+                font-size: 14px; /* Ajusta o tamanho da fonte do botão */
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ajude a Realizar um Sonho!</h1>
+</header>
+
+<div class="container">
+    <div class="content">
+        <div class="description">
+            <h2>Sobre a Vaquinha Virtual</h2>
+            <p>Estamos arrecadando fundos para nosso casamento assim como sua opiniao e muito importante a Sua contribuição tbm eh..... para alcançarmos nossa meta e fazermos a diferença. Todo valor arrecadado será destinado a festa e nossa lua de mel para viajarmos pelo brasil.</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        
+        <h3>Meta: R$ 10.000</h3>
+        <p>Já arrecadado: R$ 5 (5%)</p>
+
+        <div class="donate-buttons">
+            <button onclick="window.location.href='https://www.pagamento.com/donate'">Doar R$ 50</button>
+            <button onclick="window.location.href='https://www.pagamento.com/donate'">Doar R$ 100</button>
+            <button onclick="window.location.href='https://www.pagamento.com/donate'">Doar R$ 200</button>
+          
+            </button>
+            
+        </div>
+    </div>
+</div>
+
+<a href="#doacao-pix" class="donate-button">Doar via PIX</a>
+</div>
+<div id="doacao-pix" style="display:none; background-color: rgba(0, 0, 0, 0.8); padding: 50px 20px; color: white; text-align: center;">
+    <h2>Doação via PIX</h2>
+    <p>Escolha uma das opções abaixo para fazer sua doação via PIX:</p>
+    
+    <div class="pix-info">
+        <h3>Chave PIX</h3>
+        <p>Use a chave PIX abaixo para realizar sua doação:</p>
+        <p><strong>11967276345</strong></p>
+        <p>Ou, se preferir, escaneie o QR Code abaixo:</p>
+    </div>
+
+    <!-- Exemplo de QR Code (substitua pela imagem real do QR Code PIX) -->
+    <img class="qr-code" src="https://via.placeholder.com/300x300.png?text=QR+Code+PIX" alt="QR Code PIX">
+
+    <br><br>
+    <button onclick="window.location.href='javascript:history.back()'" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Voltar</button>
+</div>
+
+<script>
+    // Script para mostrar a seção de doação via PIX ao clicar no botão "Doar via PIX"
+    document.querySelector('.donate-button').addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+        document.getElementById('doacao-pix').style.display = 'block';
+    });
+</script>
+
+<footer>
+    <p>&copy; aLeXaNdRe 2025. Todos os direitos reservados.</p>
+</footer>
+
+
+
+</body>
+</html>
